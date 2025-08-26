@@ -5,11 +5,6 @@ require "rqrcode"
 # qrcode = RQRCode::QRCode.new("SMSTO:9876543210:Hi Alice! It's")
 # qrcode = RQRCode::QRCode.new("https://en.wikipedia.org/wiki/QR_code")
 
-qr = RQRCode::QRCode.new("https://www.google.com")
-
-png = qr.as_png(size: 250)
-IO.binwrite("sometext.png", png.to_s)
-
 puts "What kind of QR code would you like to generate?"
 
 puts "1. Open a URL"
